@@ -1,0 +1,57 @@
+{
+    "folders": [
+        {
+            "path": "1week"
+        },
+        {
+            "path": "2week"
+        },
+        {
+            "path": "3week"
+        },
+        {
+            "path": "4week"
+        },
+        {
+            "path": "5week"
+        },
+        {
+            "path": "6week"
+        },
+        {
+            "path": "7week"
+        },
+        {
+            "path": "8week"
+        }
+    ],
+    "extensions": {
+        "recommendations": [
+            "aliariff.auto-add-brackets",
+            "adpyke.codesnap",
+            "oderwat.indent-rainbow",
+            "visualstudioexptteam.vscodeintellicode",
+            "xabikos.javascriptsnippets",
+            "christian-kohler.path-intellisense",
+            "esbenp.prettier-vscode",
+            "meganrogge.template-string-converter",
+            "usernamehw.errorlens",
+            "streetsidesoftware.code-spell-checker",
+            "formulahendry.code-runner",
+            "ms-vsliveshare.vsliveshare",
+            "vscode-icons-team.vscode-icons"
+        ]
+    },
+    "settings": {
+        "files.autoSave": "afterDelay",
+        "editor.tabSize": 4,
+        "editor.formatOnSave": true,
+        "liveServer.settings.multiRootWorkspaceName": "1week",
+        "editor.minimap.autohide": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "eslint.format.enable": false,
+        "editor.snippetSuggestions": "top",
+        "javascript.suggest.paths": false,
+        "typescript.suggest.paths": false
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "recommendations": [
+        "aliariff.auto-add-brackets",
+        "formulahendry.auto-complete-tag",
+        "adpyke.codesnap",
+        "naumovs.color-highlight",
+        "pranaygp.vscode-css-peek",
+        "ecmel.vscode-html-css",
+        "oderwat.indent-rainbow",
+        "visualstudioexptteam.vscodeintellicode",
+        "xabikos.javascriptsnippets",
+        "ms-vscode.live-server",
+        "christian-kohler.path-intellisense",
+        "esbenp.prettier-vscode",
+        "meganrogge.template-string-converter",
+        "usernamehw.errorlens",
+        "streetsidesoftware.code-spell-checker",
+        "formulahendry.code-runner",
+        "ms-vsliveshare.vsliveshare",
+        "vscode-icons-team.vscode-icons"
+    ]
+}

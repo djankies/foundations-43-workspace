@@ -1,0 +1,17 @@
+{
+    "recommendations": [
+        "aliariff.auto-add-brackets",
+        "adpyke.codesnap",
+        "oderwat.indent-rainbow",
+        "visualstudioexptteam.vscodeintellicode",
+        "xabikos.javascriptsnippets",
+        "christian-kohler.path-intellisense",
+        "esbenp.prettier-vscode",
+        "meganrogge.template-string-converter",
+        "usernamehw.errorlens",
+        "streetsidesoftware.code-spell-checker",
+        "formulahendry.code-runner",
+        "ms-vsliveshare.vsliveshare",
+        "vscode-icons-team.vscode-icons"
+    ]
+}
