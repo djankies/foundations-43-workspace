@@ -1,12 +1,12 @@
 # Foundations VS Code Workspace
 
-this repository contains a Visual Studio Code workspace that simplifies your folder management and allows you to access all the projects from the DevMountain Foundations Course in one place. All you have to do is open **one** file!
+This repository contains a Visual Studio Code workspace that simplifies your folder management and allows you to access all the projects from the DevMountain Foundations Course by clicking one file.
 
 ## Workspaces in Visual Studio Code
 
-A VS Code workspace is a concept that allows you to organize and manage your code files, configurations, and dependencies within a single container. It provides a convenient way to work on multiple related projects or files simultaneously.
+A VS Code workspace is a concept that allows you to organize and manage your code files, configurations, and dependencies within a single package. It provides a convenient way to work on multiple related projects or files simultaneously.
 
-In the context of this repository, the workspace contains all the daily coding challenges, exercises/labs, and lecture demos from the DevMountain Foundations Course. Each day's work is organized into its own folder. This means that all the code files (_Code Challenges, Exercises/Labs, Demos_), exist within this repository and you only ever need to open one file in Visual Studio Code to access every project.
+In the context of this repository, the workspace contains all the daily coding challenges, exercises/labs, and lecture demos from the DevMountain Foundations Course organized by week and day into a folder structure. All the code files (_Code Challenges, Exercises/Labs, Demos_), exist within this repository and you only ever need to open one file in Visual Studio Code to access every project.
 
 ## Downloading and Opening the Workspace
 
@@ -14,11 +14,13 @@ In the context of this repository, the workspace contains all the daily coding c
 2. Once the ZIP file is downloaded, extract it to your desired location.
 3. Open Visual Studio Code.
 4. Click on `File` > `Open WorkSpace from File...` and navigate to inside the extracted folder. Select `foundations.code-workspace` and click `Open`.
-5. Alternatively you can just double click the `foundations.code-workspace` file in your file explorer.
+5. Alternatively you can just double click the `foundations.code-workspace` file in your file explorer or drag and drop it into a VS Code window.
+
+# !!!IMPORTANT!!! Don't change folder names unless you know how to edit the workspace file as well. VS Code will get *CoNFuSiOn*.
 
 ## Recommended Extensions
 
-The workspace is pre-configured with a list of recommended extensions that are useful for working with Javascript, HTML and CSS. When you open the workspace, you'll be prompted to install these extensions. You can choose to install all of them, pick the ones you need, or if you miss feelings of sadness, worthlessness, irritability and despair, – none at all! (Respect, bro.)
+The workspace is pre-configured with a list of extensions that are useful for working with Javascript, HTML and CSS. When you open the workspace, you'll be prompted to install these extensions. You can choose to install all of them, pick the ones you need, or if you miss feelings of sadness, worthlessness, irritability and despair – none at all!(ง^︠.^︡)ง 
 
 If you want to install the recommended extensions later, you can do so by clicking on the `Extensions` view in the Activity Bar on the side of the window, searching for the extension name, and clicking the `Install` button. You can also disable or uninstall extensions at any time from that same page.
 
@@ -45,11 +47,11 @@ Here's a list of the recommended extensions:
 
 ## Workspace Settings
 
-The workspace settings are configured in the `foundations.code-workspace` file. These settings are automatically applied when you open the workspace in Visual Studio Code. These take precedence over user settings and are mostly just ensure VS Code plays nicely with the recommended extensions.
+The workspace settings are configured in the `foundations.code-workspace` file. These settings are automatically applied when you open the workspace in Visual Studio Code. These take precedence over user settings and are mostly just ensure VS Code plays nicely with the recommended extensions. Oh, also– I turned on autosave for you. ;)
 
-## File Hierarchy
+## Hierarchy
 
-Each week has a dedicated folder. Within each week's folder are seven folders; one for each day of the week. Each day's folder contains 1-3 folders: the Challenge, Lab, and Demo. Some days may not have a Lab or Demo folder since some days don't have a lab or demo. Friday's folder is always empty. (Fill it with your own stuff! Or don't. It's your life. Live it how you want to. You're worth it. You're enough. You're loved. Don't cry, Life will get better in 13 weeks.)
+Each week has a dedicated folder. Within each week's folder are seven sub-folders; one for each day of the week. Each day's folder contains 1-3 folders: the Challenge, Lab, and Demo. Some days may not have a Lab or Demo folder since we don't always have a lab or demo. Friday's folder is always empty. (Fill it with your own stuff! Or don't. It's your life. Live it how you want to.)
 
 The file hierarchy is as follows:
 
