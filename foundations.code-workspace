@@ -1,27 +1,35 @@
 {
     "folders": [
         {
+            "name": "1week",
             "path": "1week"
         },
         {
+            "name": "2week",
             "path": "2week"
         },
         {
+            "name": "3week",
             "path": "3week"
         },
         {
+            "name": "4week",
             "path": "4week"
         },
         {
+            "name": "5week",
             "path": "5week"
         },
         {
+            "name": "6week",
             "path": "6week"
         },
         {
+            "name": "7week",
             "path": "7week"
         },
         {
+            "name": "8week",
             "path": "8week"
         }
     ],
