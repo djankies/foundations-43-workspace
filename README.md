@@ -8,25 +8,42 @@ A Workspace is a feature in VS Code that allows you to organize and manage your 
 
 In the context of this repository, the workspace contains all the daily coding challenges, exercises/labs, and lecture demos from the DevMountain Foundations Course organized by week and day. All the code files (_Code Challenges, Exercises/Labs, Demos_), exist within this repository and from here on out you'll only ever need to click on one file to load up all the files you need for the day.
 
-Learn more about workspaces here: [Visual Studio Code Workspaces](https://code.visualstudio.com/docs/editor/multi-root-workspaces).
+> 💡 Learn more about using workspaces here: [Visual Studio Code Workspaces](https://code.visualstudio.com/docs/editor/multi-root-workspaces).
 
-## ⬇️ Downloading & Opening the Workspace
+## 📥 Downloading & Opening the Workspace
+
+### The plebian method:
 
 1. Click on the green `Code` button and then `Download ZIP`. `$ git clone [URL]` works too.
 2. Once the ZIP file is downloaded, extract it to your desired location.
 3. Open Visual Studio Code.
 4. Click on `File` > `Open WorkSpace from File...` and navigate to inside the extracted folder. Select `foundations.code-workspace` and click `Open`.
-5. Alternatively you can just double click the `foundations.code-workspace` file in your file explorer or drag and drop it into a VS Code window.
+5. Alternatively, you can just double click the `foundations.code-workspace` file in your file explorer or drag and drop it into a VS Code window.
 
-Ensure you see `FOUNDATIONS (WORKSPACE)` at the top of your side bar.
+### The aristocrat method:
 
-## 🚨 IMPORTANT
+Open a terminal and run the following commands. You can copy, paste and run the whole block at once:
 
-**Don't change the folder location or names unless you also know how to edit the workspace file as well. VS Code will get** _C**o**NF**uS**iOn_.
+``` bash
+cd ~
+git clone https://github.com/djankies/foundations-43-workspace.git
+cd foundations-43-workspace
+code foundations.code-workspace
+```
+
+<br>
+
+---
+
+<br>
+
+>💡 Ensure you see `FOUNDATIONS (WORKSPACE)` at the top of the VS Code File explorer after opening the workspace.
+
+> **🚨 IMPORTANT:** Don't change any sub-folder locations or names unless you also know how to edit the workspace file as well. VS Code will get _C**o**NF**uS**Ed_. Moving around the parent directory (`foundations-43-workspace`) is fine, however.
 
 ## 💫 Helpful Extensions
 
-The workspace is pre-configured with a list of extensions that are useful for working with Javascript, HTML and CSS. When you open the workspace, you'll be prompted to install these extensions. You can choose to install all of them, pick the ones you need, or– if you miss feelings of sadness, worthlessness, irritability and despair, none at all! `(ง^︠.^︡)ง`
+The workspace is pre-configured with a list of extensions that are useful for working with Javascript, HTML and CSS. When you open the workspace, you'll be prompted to install these extensions. You can choose to install all of them, pick the ones you need, or– if you miss feelings of sadness, worthlessness, irritability and despair, none at all! **`(ง^︠.^︡)ง`**
 
 If you want to install extensions later, you can do so by clicking on the `Extensions` view in the Activity Bar on the side of the window, searching for the extension name, and clicking the `Install` button. You can also disable or uninstall extensions at any time from that same page.
 
@@ -41,7 +58,7 @@ Here's a list of the extensions:
 - [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) - Formats your code according to predefined rules.
 - [Template String Converter](https://marketplace.visualstudio.com/items?itemName=meganrogge.template-string-converter) - Converts concatenation to template strings in JavaScript.
 - [Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner) - Run your code with a click of a button.
-- [Auto Add Brackets](https://marketplace.visualstudio.com/items?itemName=aliariff.auto-add-brackets) - Automatically adds closing brackets when you type an opening bracket.
+- [Auto Add Brackets](https://marketplace.visualstudio.com/items?itemName=aliariff.auto-add-brackets) - Automatically adds closing brackets when writing an interpolated string.
 - [CodeSnap](https://marketplace.visualstudio.com/items?itemName=adpyke.codesnap) - Take screenshots of your code to share.
 - [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight) - Highlights colors in your code.
 - [Indent Rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow) - Adds rainbow colors to indentations in your code.
@@ -56,7 +73,7 @@ Here's a list of the extensions:
 
 The workspace settings are configured in the `foundations.code-workspace` file. These settings are automatically applied when you open the workspace in Visual Studio Code. These take precedence over user settings and are mostly just ensure VS Code plays nicely with the recommended extensions. Oh, also– I turned on autosave for you.
 
-Learn more about User and workspace settings here: [Visual Studio Code User and Workspace Settings](https://code.visualstudio.com/docs/getstarted/settings).
+>💡 Learn more about User and Workspace settings here: [Visual Studio Code User and Workspace Settings](https://code.visualstudio.com/docs/getstarted/settings).
 
 ## 📁 Hierarchy
 
@@ -76,15 +93,13 @@ The file hierarchy is as follows:
 
         ├── Challenge <--||These 3 folders are  
         ├── Exercise  <--||the same ones downloaded
-        └── Demo      <--||on the course site.
-                            
-                            
+        └── Demo      <--||on the course site.                          
 
 ```
 
-## 👩‍💻 Using Git
+## 👩‍💻 Using `git`
 
-You can use git how you always do. `cd` to the _challenge_ or _lab_ folder, run `git init`, `git add`, etc.
+You can use `git` how you always do. `cd` to the _challenge_ or _lab_ folder, run `git init`, `git add`, etc.
 
 You can also initialize the entire workspace as a git repository and push it to github. That way you only have to manage one repository for all your Foundations work.
 
