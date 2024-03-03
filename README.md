@@ -1,12 +1,12 @@
 # Foundations VS Code Workspace
 
-This repository contains a Visual Studio Code workspace that simplifies your folder management and allows you to access all the projects from the DevMountain Foundations Course by clicking one file.
+This repository contains a Visual Studio Code Workspace that simplifies folder management and allows one to easily access all the Labs, Exercises and Demos from the DevMountain Foundations Course in one click.
 
 ## 🖥️ Workspaces in Visual Studio Code
 
-A VS Code workspace is a concept that allows you to organize and manage your code files, configurations, and dependencies within a single package. It provides a convenient way to work on multiple related projects or files simultaneously.
+A Workspace is a feature in VS Code that allows you to organize and manage your project's files, folders, configurations, and dependencies within a single package. It provides a convenient way to work on multiple related projects or files simultaneously.
 
-In the context of this repository, the workspace contains all the daily coding challenges, exercises/labs, and lecture demos from the DevMountain Foundations Course organized by week and day into a folder structure. All the code files (_Code Challenges, Exercises/Labs, Demos_), exist within this repository and you only ever need to open one file in Visual Studio Code to access every project within the file browser.
+In the context of this repository, the workspace contains all the daily coding challenges, exercises/labs, and lecture demos from the DevMountain Foundations Course organized by week and day. All the code files (_Code Challenges, Exercises/Labs, Demos_), exist within this repository and from here on out you'll only ever need to click on one file to load up all the files you need for the day.
 
 Learn more about workspaces here: [Visual Studio Code Workspaces](https://code.visualstudio.com/docs/editor/multi-root-workspaces).
 
@@ -60,7 +60,7 @@ Learn more about User and workspace settings here: [Visual Studio Code User and 
 
 ## 📁 Hierarchy
 
-Each week has a dedicated folder. Within each week's folder are seven sub-folders; one for each day of the week. Each day's folder contains 1-3 folders: the Challenge, Lab, and Demo. Some days may not have a Lab or Demo folder since we don't always have a lab or demo. Friday's folder is almost always empty. (Fill it with your own stuff! Or don't. It's your life. Live it how you want to.)
+Each week has a dedicated folder. Within each week's folder are seven sub-folders; one for each day of the week. Each day's folder contains 1-3 folders: the Challenge, Lab, and Demo. You'll notice some weeks have missing days. This is because those days don't have any content to download.
 
 The file hierarchy is as follows:
 
