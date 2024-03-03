@@ -1,0 +1,32 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "Foundations Workspace Tour",
+  "steps": [
+    {
+      "file": "1week/.vscode/extensions.json",
+      "description": "Each week has a JSON list of recommended extensions within the the .vscode folder. Just Pretend they aren't there. This is Week one's list.",
+      "line": 18
+    },
+    {
+      "file": "foundations.code-workspace",
+      "description": "This is the foundations workspace file. It contains a list of the of all the folders that are part of the workspace.",
+      "line": 35
+    },
+    {
+      "file": "foundations.code-workspace",
+      "description": "Some extensions are reccomended for every week. That list lives here too.",
+      "line": 51
+    },
+    {
+      "file": "foundations.code-workspace",
+      "description": "Here are the settings that will overide your user settings. They just help make VS Code compatible with some extensions. You can delete these if they're interfering with your setup.",
+      "line": 66
+    },
+    {
+      "file": "3week/1-monday/challenge-is-palindrome/challenge-is-palindrome.html",
+      "description": "Here's monday's challenge. Enjoy!",
+      "line": 1
+    }
+  ],
+  "ref": "main"
+}
