@@ -8,7 +8,9 @@ A VS Code workspace is a concept that allows you to organize and manage your cod
 
 In the context of this repository, the workspace contains all the daily coding challenges, exercises/labs, and lecture demos from the DevMountain Foundations Course organized by week and day into a folder structure. All the code files (_Code Challenges, Exercises/Labs, Demos_), exist within this repository and you only ever need to open one file in Visual Studio Code to access every project within the file browser.
 
-## ⬇️ Downloading and Opening the Workspace
+Learn more about workspaces here: [Visual Studio Code Workspaces](https://code.visualstudio.com/docs/editor/multi-root-workspaces).
+
+## ⬇️ Downloading & Opening the Workspace
 
 1. Click on the green `Code` button and then `Download ZIP`. `$ git clone [URL]` works too.
 2. Once the ZIP file is downloaded, extract it to your desired location.
@@ -54,13 +56,15 @@ Here's a list of the extensions:
 
 The workspace settings are configured in the `foundations.code-workspace` file. These settings are automatically applied when you open the workspace in Visual Studio Code. These take precedence over user settings and are mostly just ensure VS Code plays nicely with the recommended extensions. Oh, also– I turned on autosave for you.
 
+Learn more about User and workspace settings here: [Visual Studio Code User and Workspace Settings](https://code.visualstudio.com/docs/getstarted/settings).
+
 ## 📁 Hierarchy
 
 Each week has a dedicated folder. Within each week's folder are seven sub-folders; one for each day of the week. Each day's folder contains 1-3 folders: the Challenge, Lab, and Demo. Some days may not have a Lab or Demo folder since we don't always have a lab or demo. Friday's folder is almost always empty. (Fill it with your own stuff! Or don't. It's your life. Live it how you want to.)
 
 The file hierarchy is as follows:
 
-``` text block
+``` plaintext
 / Foundations
     ├── 1week
     ├── 2week
@@ -80,6 +84,8 @@ The file hierarchy is as follows:
 
 ## 👩‍💻 Using Git
 
-You can use git how you always do. `cd` to the _challenge_ or _lab_ folder, run `git init`, `git add`, etc. Keep in mind, the VS Code terminal might not open to the correct directory when you switch between folders or open a workspace, so always ensure you initialize git in the correct folder.
+You can use git how you always do. `cd` to the _challenge_ or _lab_ folder, run `git init`, `git add`, etc.
+
+You can also initialize the entire workspace as a git repository and push it to github. That way you only have to manage one repository for all your Foundations work.
 
 _Content was downloaded from [FRODO](https://ed.devmountain.com) on February 29, 2024._
