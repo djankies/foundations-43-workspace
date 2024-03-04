@@ -12,15 +12,16 @@ In the context of this repository, the workspace contains all the daily coding c
 
 ## 📥 Downloading & Opening the Workspace
 
-### The plebian method:
+### The hard way
 
-1. Click on the green `Code` button and then `Download ZIP`. `$ git clone [URL]` works too.
-2. Once the ZIP file is downloaded, extract it to your desired location.
+1. Click on the green `Code` button on this page and then `Download ZIP`.
+2. Extract it to your desired location.
 3. Open Visual Studio Code.
-4. Click on `File` > `Open WorkSpace from File...` and navigate to inside the extracted folder. Select `foundations.code-workspace` and click `Open`.
-5. Alternatively, you can just double click the `foundations.code-workspace` file in your file explorer or drag and drop it into a VS Code window.
+4. Click on `File` > `Open WorkSpace from File...`, Select `foundations.code-workspace` inside the folder you just extracted and click `Open`.
 
-### The aristocrat method:
+> 💡 Alternatively, you can just double click the `foundations.code-workspace` file in your file explorer or drag and drop it into a VS Code window.
+
+### The easy way
 
 Open a terminal and run the following commands. You can copy, paste and run the whole block at once:
 
@@ -82,7 +83,7 @@ Each week has a dedicated folder. Within each week's folder are seven sub-folder
 The file hierarchy is as follows:
 
 ``` plaintext
-/ Foundations
+/ Foundations-43-Workspace
     ├── 1week
     ├── 2week
     └── etc...
