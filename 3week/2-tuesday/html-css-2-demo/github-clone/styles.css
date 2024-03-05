@@ -11,21 +11,39 @@
 */
 
 /*GLOBAL*/
-
+body {
+    background-color: #0d1116;
+}
 
 /*HEADER*/
+header {
+    height: 130px;
+    width: 100%;
+    background-color: #02040a;
+    padding-left: 10px;
+}
 
+#header-top {
+    height: 30px;
+    width: 100%;
+    background-color: blue;
+}
+
+nav {
+    
+}
 
 /*MAIN*/
+#left-body { 
+    width: 100%;
+}
+#repos {
 
-
+}
 /*REPO NAV*/
-
 
 /*CONTAINER*/
 
-
 /*LEFT PROFILE*/
-
 
 /*RIGHT REPOS*/

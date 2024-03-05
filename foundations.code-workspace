@@ -48,14 +48,14 @@
             "formulahendry.code-runner",
             "ms-vsliveshare.vsliveshare",
             "vscode-icons-team.vscode-icons",
-            "hnw.vscode-auto-open-markdown-preview",
+            "hnw.vscode-auto-open-markdown-preview"
         ]
     },
     "settings": {
         "files.autoSave": "afterDelay",
         "editor.tabSize": 4,
         "editor.formatOnSave": true,
-        "liveServer.settings.multiRootWorkspaceName": "foundations",
+        "liveServer.settings.multiRootWorkspaceName": "3week",
         "editor.minimap.autohide": true,
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "eslint.format.enable": false,

@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#first-header {
+    color: purple;
+    background-color: pink;
+}
+
+#second-header {
+    color: blue;
+}
+
+div {
+    height: 50px;
+    width: 50px;
+}
+
+.purple {
+    background-color: purple;
+}
+
+.large {
+    width: 150px;
+}
