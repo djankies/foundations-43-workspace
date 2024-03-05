@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+    font-size: 20px;
+    color: black;
+    background-color: #ffffff;
+    position: abs;
+}
+
+header {
+    background-image: URL("./pcb.jpg");
+    padding: 40px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    background-attachment: fixed;
+    width: auto;
+}
+h1 {
+    font-family: 'Popppins', ';
+}
+h2, h3, p {
+    font-family: Poppins;
+}
+
+h1 {
+    font-size: 80px;
+    margin-top: 80px;
+    margin-bottom: 0;
+    padding: 0;
+    color: white;
+    position: relative;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 80px;
+    margin-top: 10px;
+    padding: 0;
+    color: white;
+    text-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+}
+
+img {
+    width: auto;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+h3 {
+    font-size: 25px;
+    color: black;
+    padding: 0 50px;
+    padding-bottom: 0;
+}
+
+p {
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+    padding: 0 50px 40px;
+}
+
+button {
+    background-color: white;
+    font-family: Poppins;
+    font-weight: 400;
+  /*  */font-size: 16px;
+    text-align: left;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 25px;
+    margin: 0 50px;
+}
+
+button:hover {
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.dark-button {
+    background-color: #18371800;
+    color: black;
+    border: 2px solid black;
+    border-radius: 25px;
+}
+
+.dark-button:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+div {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+    font-size: 20px;
+    color: black;
+    padding: 50px;
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+#resistor-pic, #inductor-img, #cap-img, #diode-img, #transistor-img {
+    width: 10%;
+    height: 100%;
+    padding: 20px;
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#resistor-pic {
+    rotate: 90deg;
+}
+
+.dark-block {
+    background-color: #1837183d;
+}
+
+footer {
+    background-color: #333;
+    padding: 20px;
+    margin-top: 20px;
+    align-items: center;
+}
+
+footer p {
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    font-family: Poppins;
+    text-decoration: none;
+    margin-top: 50px;
+    text-shadow: 0 10px 10px rgba(0, 0, 0, 0.496);
+    opacity: 0.5;
+    transition: 0.5s;
+    align-items: center;
+}
+
+nav li:hover {
+    opacity: 1;
+    cursor: pointer;
+}
