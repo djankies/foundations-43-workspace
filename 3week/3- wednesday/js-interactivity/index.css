@@ -58,3 +58,7 @@ button {
     margin-left: 20px;
     vertical-align: middle;
 }
+
+button:hover {
+    background: rgb(3, 90, 90);   
+}
