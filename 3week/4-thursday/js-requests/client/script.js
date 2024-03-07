@@ -2,27 +2,26 @@
 //THE TEST SERVER IS RUNNING ON LOCALHOST:3000//
 ////////////////////////////////////////////////
 
-// PROBLEM 1
+//! PROBLEM 1
 /*
     In the index.html file in this folder there is a button with an id of 'say-hello-button'!
 
     Use querySelector to select that button and save it to a variable called sayHelloButton
 */
 
-// CODE HERE
+//? CODE HERE
 
-
-// PROBLEM 2
+//! PROBLEM 2
 /*
     Create a function that changes sayHelloButton's background color to black and its text color to white (you can use the .style object or create a CSS class and use classList.add)
     
     Attach a mouseover event to sayHelloButton that calls the function you wrote
 */
 
-// CODE HERE
+//? CODE HERE
 
 
-// PROBLEM 3
+//! PROBLEM 3
 /*
     Now you can see that the button colors change, but they do not change back when we take the mouse off of the button.
 
@@ -31,10 +30,10 @@
     Attach another listener that fires your second function when the mouseout event occurs on the button
 */
 
-// CODE HERE
+//? CODE HERE
 
 
-// PROBLEM 4
+//! PROBLEM 4
 /*
     Now lets see if we can make a request to our server when we click the button
 
@@ -52,12 +51,12 @@ const sayHello = () => {
 }
 // DO NOT EDIT FUNCTION
 
-// CODE HERE
+//? CODE HERE
 
 
-// PROBLEM 5 
+//! PROBLEM 5 
 /*
-    Now that we have attached a few event listeners why dont we try adding a request? 
+    Now that we have attached a few event listeners why don't we try adding a request? 
     
     Below you will find an event listener on a button. 
     
@@ -73,7 +72,7 @@ const ohMy = () => {
 document.getElementById('animals-button').addEventListener('click', ohMy)
 
 
-// PROBLEM 6 
+//! PROBLEM 6 
 /*
     Now lets see if you can send a request param! inside repeatMyParam function below  make get request to 'http://localhost:3000/repeat/{SOMEPARAM}', but with a string instead of {SOMEPARAM}.  
 
@@ -87,10 +86,10 @@ document.getElementById('animals-button').addEventListener('click', ohMy)
 */
 
 const repeatMyParam = () => {
-    //YOUR CODE HERE
+    //? YOUR CODE HERE
 }
 
-// PROBLEM 7
+//! PROBLEM 7
 /*
     Now that we have the response data, let's add it to our web page! 
     
@@ -103,7 +102,7 @@ const repeatMyParam = () => {
 
 
 
-// PROBLEM 8
+//! PROBLEM 8
 /*
     Time to attach a query to our request!
 
@@ -112,7 +111,7 @@ const repeatMyParam = () => {
     Outside of your new function, select the button with the id "query-button" and add a click event listener that calls your function.
 */
 
-// CODE HERE
+//? CODE HERE
 
 
 
@@ -120,16 +119,16 @@ const repeatMyParam = () => {
 //INTERMEDIATE//
 ////////////////
 
-// PROBLEM 9
+//! PROBLEM 9
 /* 
     Back in the ohMy function on Problem 5, replace the console log in the promise's callback with a for loop that loops over res.data. 
 
     On each iteration of the loop, create a new p element. Set its textContent equal the string at the current index (i) and then append the new p element onto the document's body. 
 */
 
-// Code in the ohMy function in Problem 5
+//? Code in the ohMy function in Problem 5
 
-// PROBLEM 10 
+//! PROBLEM 10 
 /*
     In the function that you wrote for Problem 8, change the URL to test a couple different scenarios. 
 
@@ -138,7 +137,7 @@ const repeatMyParam = () => {
     2: Send more than 1 query on the URL -- what happened? 
 */
 
-// Edit code in Problem 8
+//? Edit code in Problem 8
 
 
 
@@ -146,7 +145,7 @@ const repeatMyParam = () => {
 //ADVANCED//
 ////////////
 
-//PROBLEM 11
+//! PROBLEM 11
 /*
     You are going to add the ability to POST to the server. You'll need to create a small form and write a function that makes a post request. Then you'll attach that function to the submit event on the form. We'll be creating a list of foods. 
 
@@ -165,4 +164,4 @@ const repeatMyParam = () => {
     Based on what we did earlier to display this type of data, write code that will display the response in your HTML document. 
 */
 
-// CODE HERE 
+//? CODE HERE 
