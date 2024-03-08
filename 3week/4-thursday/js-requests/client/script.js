@@ -2,24 +2,29 @@
 //THE TEST SERVER IS RUNNING ON LOCALHOST:3000//
 ////////////////////////////////////////////////
 
+// const { default: axios } = require("axios");
+
 //! PROBLEM 1
 /*
     In the index.html file in this folder there is a button with an id of 'say-hello-button'!
-
     Use querySelector to select that button and save it to a variable called sayHelloButton
 */
 
 //? CODE HERE
-
+const helloBtn = document.querySelector("#say-hello-button");
 //! PROBLEM 2
 /*
     Create a function that changes sayHelloButton's background color to black and its text color to white (you can use the .style object or create a CSS class and use classList.add)
     
     Attach a mouseover event to sayHelloButton that calls the function you wrote
 */
+function changeColor() {
+    helloBtn.style.backgroundColor = "black";
+    helloBtn.style.color = "white";
+}
+helloBtn.addEventListener("mouseover", changeColor);
 
 //? CODE HERE
-
 
 //! PROBLEM 3
 /*
@@ -32,7 +37,12 @@
 
 //? CODE HERE
 
+function changeBack() {
+    helloBtn.style.color = "black";
+    helloBtn.style.backgroundColor = "#EFEFEF";
+}
 
+helloBtn.addEventListener("mouseout", changeBack);
 //! PROBLEM 4
 /*
     Now lets see if we can make a request to our server when we click the button
@@ -42,19 +52,18 @@
 
 // DO NOT EDIT FUNCTION
 const sayHello = () => {
-    axios.get('http://localhost:3000/say-hello').then((res) => {
-        let helloText = document.getElementById('hello-text');
-        helloText.style.display = 'block';
-        helloText.style.backgroundColor = 'green';
+    axios.get("http://localhost:3000/say-hello").then((res) => {
+        let helloText = document.getElementById("hello-text");
+        helloText.style.display = "block";
+        helloText.style.backgroundColor = "green";
         helloText.textContent = res.data;
-    })
-}
+    });
+};
 // DO NOT EDIT FUNCTION
 
 //? CODE HERE
-
-
-//! PROBLEM 5 
+helloBtn.addEventListener("click", sayHello);
+//! PROBLEM 5
 /*
     Now that we have attached a few event listeners why don't we try adding a request? 
     
@@ -63,16 +72,28 @@ const sayHello = () => {
     Use axios inside the ohMy function to make a GET request to 'http://localhost:3000/animals' 
     
     Handle the promise that's returned with a .then, which you should pass a callback function to. Inside the callback function, console.log the response's data (in the intermediate instructions we'll come back to this function and add HTML).
-*/ 
+*/
+/* 
+    Back in the ohMy function on Problem 5, replace the console log in the promise's callback with a for loop that loops over res.data. 
+
+    On each iteration of the loop, create a new p element. Set its textContent equal the string at the current index (i) and then append the new p element onto the document's body. 
+*/
 
 const ohMy = () => {
     // YOUR CODE HERE
-}
+    axios.get("http://localhost:3000/animals").then((res) => {
+        // console.log(res.data);
+        for (let i = 0; i < res.data.length; i++) {
+            const aP = document.createElement("p");
+            aP.textContent = res.data[i];
+            document.querySelector("body").appendChild(aP);
+        }
+    });
+};
 
-document.getElementById('animals-button').addEventListener('click', ohMy)
+document.getElementById("animals-button").addEventListener("click", ohMy);
 
-
-//! PROBLEM 6 
+//! PROBLEM 6
 /*
     Now lets see if you can send a request param! inside repeatMyParam function below  make get request to 'http://localhost:3000/repeat/{SOMEPARAM}', but with a string instead of {SOMEPARAM}.  
 
@@ -86,8 +107,19 @@ document.getElementById('animals-button').addEventListener('click', ohMy)
 */
 
 const repeatMyParam = () => {
-    //? YOUR CODE HERE
-}
+    axios
+        .request("http://localhost:3000/repeat/astring")
+
+        .then((res) => {
+            console.log(res.data);
+            document.getElementById("repeat-text").textContent = res.data;
+            document.getElementById("repeat-text").style.display = "block";
+        });
+};
+
+document
+    .getElementById("repeat-button")
+    .addEventListener("click", repeatMyParam);
 
 //! PROBLEM 7
 /*
@@ -100,8 +132,6 @@ const repeatMyParam = () => {
 
 // Code in the repeatMyParam function above
 
-
-
 //! PROBLEM 8
 /*
     Time to attach a query to our request!
@@ -113,7 +143,16 @@ const repeatMyParam = () => {
 
 //? CODE HERE
 
-
+function getRequest() {
+    // axios.get("http://localhost:3000/query-test?query=somequery");
+    // axios.get("http://localhost:3000/");
+    axios
+        .get(
+            "http://localhost:3000/query-test?query=somequery&query2=anotherquery"
+        )
+        .then(console.log("it worked"));
+}
+document.getElementById("query-button").addEventListener("click", getRequest);
 
 ////////////////
 //INTERMEDIATE//
@@ -128,7 +167,7 @@ const repeatMyParam = () => {
 
 //? Code in the ohMy function in Problem 5
 
-//! PROBLEM 10 
+//! PROBLEM 10
 /*
     In the function that you wrote for Problem 8, change the URL to test a couple different scenarios. 
 
@@ -138,8 +177,6 @@ const repeatMyParam = () => {
 */
 
 //? Edit code in Problem 8
-
-
 
 ////////////
 //ADVANCED//
@@ -164,4 +201,39 @@ const repeatMyParam = () => {
     Based on what we did earlier to display this type of data, write code that will display the response in your HTML document. 
 */
 
-//? CODE HERE 
+//? CODE HERE
+function createFood() {
+    console.log("it worked");
+    const foodInput = document.querySelector("input").value;
+    const body = { newFood: foodInput };
+    axios
+        .post("http://localhost:3000/food", body)
+        .then((res) => {
+            const aFood = document.createElement("p");
+            console.log("aFood:", aFood);
+            console.log(res);
+            console.log(res.data);
+            console.log(res.data[0]);
+            aFood.textContent = res.data[0];
+            document.querySelector("body").appendChild(aFood);
+        })
+        .catch((res) => console.log(res));
+
+    // const aFood = document.createElement("p");
+}
+
+document.querySelector("form").addEventListener("submit", createFood);
+
+// const ohMy = () => {
+//     // YOUR CODE HERE
+//     axios.get("http://localhost:3000/animals").then((res) => {
+//         // console.log(res.data);
+//         for (let i = 0; i < res.data.length; i++) {
+//             const aP = document.createElement("p");
+//             aP.textContent = res.data[i];
+//             document.querySelector("body").appendChild(aP);
+//         }
+//     });
+// };
+
+// document.getElementById("animals-button").addEventListener("click", ohMy);
