@@ -6,8 +6,14 @@ const app = express()
 app.use(express.json())
 app.use(express.static(__dirname + '/static'));
 
+const { getHouses, createHouse } = require("./controller.js");
+
 app.get('/', (req, res) => {
     res.sendFile('static/index.html', {root: __dirname});
 })
+
+app.get('/api/houses', getHouses)
+
+app.post('/api/houses', createHouse)
 
 app.listen(4000, () => console.log(`Server running on port 4000`))
