@@ -18,7 +18,7 @@ module.exports = {
       };
       chats.push(msgObj);
       for (let i = 0; i < chats.length; i++) {
-        let existingPin = bcrypt.compare( pin, chats[i].pinHash);
+        let existingPin = bcrypt.compareSync( pin, chats[i].pinHash);
         if (existingPin) {
         chats[i].messages.push(message);
         let messagesToReturn = {...chats[i]};
