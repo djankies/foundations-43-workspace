@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jeanie's Fortunes</title>
+        <style>
+            body {
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: column;
+                font-family: "Arial", sans-serif;
+            }
+            form {
+              
+                display: flex;
+                flex-direction: row;
+                margin-bottom: 10px;
+            }
+        </style>
+    </head>
+    <body class="container">
+        <h1>Jeanie's Fortunes</h1>
+        <figure><img src="./Static/fortune-teller.jpg" /></figure>
+        <!-- <button id="complimentButton">Get a compliment</button> -->
+        <!-- Feature 1 -->
+        <form id="add-fortune">
+            Add a fortune:
+            <input type="text" id="fortune" placeholder="Type Here..." />
+            <button type="submit" id="addFortuneBtn">Add</button>
+        </form>
+        <form id="delete-fortune-form">
+            Delete a fortune:
+            <select
+                id="delete-fortune-dropdown"
+                class="select-fortune"
+                style="display: block"
+            ></select>
+            <button type="submit" class="deleteFortuneBtn">
+                Delete
+            </button>
+        </form>
+        <button id="fortuneBtn">Get a fortune</button>
+
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
