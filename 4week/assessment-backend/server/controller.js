@@ -33,7 +33,7 @@ module.exports = {
     postFortune: (req, res) => {
         const { fortune } = req.body;
         fortunes.push(fortune);
-        console.log("a" + fortune);
+        console.log(fortune);
         res.status(200).send(fortunes);
     },
     pageInit: (req, res) => {
@@ -41,7 +41,7 @@ module.exports = {
     },
     deleteFortune: (req, res) => {
         const { fortune } = req.body;
-        console.log("fortune:", fortune);
+        console.log("deletefortune:", fortune);
         let index = fortunes.indexOf(fortune);
         console.log("index:", index);
         if (index !== -1) {
@@ -49,6 +49,8 @@ module.exports = {
             res.status(200).send(fortunes);
         } else {
             res.status(404).send("Fortune not found.");
+            console.log('Fortune not found.');
+            
         }
     },
 };

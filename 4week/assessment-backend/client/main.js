@@ -1,17 +1,39 @@
-const complimentBtn = document.getElementById("complimentButton");
+// const complimentBtn = document.getElementById("complimentButton");
 const fortuneBtn = document.getElementById("fortuneBtn");
+const newFortuneInput = document.getElementById("new-fortune-input");
+
 const addfortuneBtn = document.getElementById("addFortuneBtn");
-const deleteFortuneDropdown = document.getElementById("delete-fortune-button");
-const options = document.querySelectorAll("option");
+
+
+const deleteFortuneSelection = document.getElementById("delete-fortune-selection");
+const deleteFortuneSubmit = document.getElementById("delete-fortune-btn");
 
 const baseURL = "http://localhost:4000";
 
-const getCompliment = () => {
-    axios.get("http://localhost:4000/api/compliment/").then((res) => {
+// const getCompliment = () => {
+//     axios.get("http://localhost:4000/api/compliment/").then((res) => {
+//         const data = res.data;
+//         alert(data);
+//     });
+// };
+
+const pageInit = () => {
+    axios.get(`${baseURL}/`).then((res) => {
         const data = res.data;
-        alert(data);
+        data.forEach((fortune) => {
+            let i = 0;
+            console.log("fortune:", fortune);
+
+            const option = document.createElement("option");
+            option.innerHTML = fortune;
+            option.value = fortune[i];
+            deleteFortuneSelection.appendChild(option);
+            i++;
+        });
     });
 };
+
+pageInit();
 
 const getFortune = () => {
     axios
@@ -25,52 +47,46 @@ const getFortune = () => {
         });
 };
 
-const postFortune = (req, res) => {
+const postFortune = () => {
     axios
         .post(`${baseURL}/api/fortune`, {
-            fortune: "You will find happiness with a new love.",
+            fortune: newFortuneInput.value
+            
         })
+
         .then((res) => {
             const data = res.data;
-            alert(data);
+            alert(data[data.length-1]);
         })
         .catch(() => {
             console.log("Error");
         });
 };
 
-const pageInit = () => {
-    axios.get(`${baseURL}/`).then((res) => {
-        const data = res.data;
-        data.forEach((fortune) => {
-            let i=0;
-            console.log('fortune:', fortune);
-            
-            const option = document.createElement("option");
-            option.innerHTML = fortune;
-            option.value = fortune[i];
-            deleteFortuneDropdown.appendChild(option);
-            i++;
-        });
-    });
-};
 
-const deleteFortune = () => {
+const deleteFortuneRequest = (deleteFortuneSelection) => {
     axios
         .delete(`${baseURL}/api/fortune`, {
-            data: { fortune: deleteFortune.value },
-        })
+            "fortune": deleteFortuneSelection})
         .then((res) => {
+
             const data = res.data;
-            alert(data);
+            console.log('data:', data);
+            
+            //delete the option from the Selection
+            let option = document.querySelector(`option[value="${fortuneToDelete.value}"]`);
+            option.remove();
         })
         .catch(() => {
             console.log("Error");
         });
 }
-pageInit();
 
+
+deleteFortuneSubmit.addEventListener("click", deleteFortuneRequest);
 
 addfortuneBtn.addEventListener("click", postFortune);
+
 fortuneBtn.addEventListener("click", getFortune);
+
 // complimentBtn.addEventListener("click", getCompliment);
