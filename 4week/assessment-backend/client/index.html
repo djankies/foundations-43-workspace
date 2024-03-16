@@ -1,51 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Whisper&display=swap"
+            rel="stylesheet"
+        />
         <title>Jeanie's Fortunes</title>
-        <style>
-            body {
-                box-sizing: border-box;
-                display: flex;
-                flex-direction: column;
-                font-family: "Arial", sans-serif;
-            }
-            form {
-              
-                display: flex;
-                flex-direction: row;
-                margin-bottom: 10px;
-            }
-        </style>
     </head>
     <body class="container">
         <h1>Jeanie's Fortunes</h1>
-        <figure><img src="./Static/fortune-teller.jpg" /></figure>
-        <!-- <button id="complimentButton">Get a compliment</button> -->
+        <figure>
+            <img src="./Static/fortune-teller.jpg" />
+        </figure>
+
         <!-- Feature 1 -->
-        
-        
-        
-        
-        
         <form id="add-fortune">
             Add a fortune:
-            <input type="text" id="new-fortune-input" placeholder="Type Here..." />
+            <input
+                type="text"
+                id="add-fortune-input"
+                placeholder="Type Here..."
+            />
             <button type="submit" id="addFortuneBtn">Add</button>
         </form>
-       
-       
-       
-       
-       
+
+        <!-- Feature 2 -->
         <form id="delete-fortune-form">
-            Delete a fortune:
+            Delete/update:
             <select
                 id="delete-fortune-selection"
                 class="select-fortune"
                 style="display: block"
-            ></select>
-            <button type="submit" class="deleteFortuneBtn" id="delete-fortune-btn">Delete</button>
+            >
+                <option id="default-option">Select a fortune...</option>
+            </select>
+            <input
+                type="text"
+                id="new-fortune-input"
+                class="hidden"
+                placeholder="Type Here..."
+            />
+            <div id="button-container">
+                <button type="submit" id="change-fortune-btn" class="hidden">
+                    Update
+                </button>
+                <button type="submit" id="delete-fortune-btn" class="hidden">
+                    Delete
+                </button>
+            </div>
         </form>
+
+        <!-- Feature 3 -->
+        <form id="change-fortune-form"></form>
+
+        <!-- Feature 4 -->
         <button id="fortuneBtn">Get a fortune</button>
 
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>

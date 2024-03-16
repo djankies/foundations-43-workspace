@@ -1,0 +1,87 @@
+/* variables */
+:root {
+    --primary-background: #ffffff;
+    --secondary-background: #fff;
+    --primary-text: #333;
+    --secondary-text: #666;
+    --primary-color: #680d0d;
+    --secondary-color: #7328a1;
+    --primary-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+    --primary-font: "cursive", sans-serif;
+    --header-font: "Whisper", cursive;
+    --primary-border-radius: 0.25rem;
+    --primary-transition: all 0.3s linear;
+}
+/* construction */
+/* .container {
+    max-width: 1170px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 1.5rem;
+} */
+
+/* Global */
+* {
+    margin: 1rem;
+    padding: 0;
+    box-sizing: border-box;
+    /* construction */
+    background-color: var(--primary-background);
+}
+
+figure {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+/* Typography */
+body {
+    font-family: var(--primary-font);
+    color: var(--primary-text);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+}
+h1 {
+    font-size: 8rem;
+    margin-bottom: 1rem;
+    font-family: var(--header-font);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+form {
+    flex-direction: column;
+    margin-bottom: 10px;
+    display: flex;
+    text-align: center;
+    font-family: var(--primary-font);
+}
+
+button {
+    margin: 0.5rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-family: var(--header-font);
+    text-align: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: var(--secondary-background);
+    border-radius: var(--primary-border-radius);
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: var(--primary-transition);
+    box-shadow: var(--primary-shadow);
+}
+
+.hidden {
+    display: none;
+}
+#delete-fortune-selection  {
+    text-align-last: center; /* For Firefox */
+    text-align: center;
+}

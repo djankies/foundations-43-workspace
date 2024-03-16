@@ -1,21 +1,17 @@
 const database = {
-"fortunes":["You will find a bushel of money",
-"You will find happiness with a new love",
-"Your smile will tell you what makes you feel good",
-"Your high-minded principles spell success",
-"Your ability for accomplishment will follow with success",
-"Your dearest wish will come true",
-"The time is right to make new friends",
-"Your good nature will bring unbounded happiness",
-"Your ability to juggle many tasks will take you far",
-"A friend asks only for your time not your money",
-"A friend is a present you give yourself",
-"A friend's frown is better than a fool's smile",
-"A friend in the market is better than money in the purse",
-"A friend is long sought, hardly found, and with difficulty kept",
-"A friend's eye is a good mirror",
-"A friend to everybody is a friend to nobody",
-"A friend's frown is better than a fool's smile",]
-}
-module.exports = database
-
+    fortunes: [
+        "VS Code will become a paid software",
+        "Coffee will spill on your laptop this week",
+        "Your space key will get stuck depressed",
+        "Your computer will crash when you plug in your headphones",
+        "Github Copilot will write better code than you",
+        "The greatest risk in life is a reduced instruction set computer",
+        "Your code will fail and you won't learn anything from it",
+        "One of your students won't be able to open zoom",
+        "you will experience PAIN: Poor documentation, Annoying pop-ups, Inconsistent UIs, and Non-responsive design",
+        "Your code will be perfect, but the requirements will change.",
+        "Your most used library will be deprecated.",
+        "Your internet connection will become intermittently slow.",
+    ],
+};
+module.exports = database;
