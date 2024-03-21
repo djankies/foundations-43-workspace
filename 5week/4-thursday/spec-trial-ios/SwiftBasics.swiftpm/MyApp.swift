@@ -1,12 +1,11 @@
-import SwiftUI
+import Foundation
 
-@main
-struct MyApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
-    }
-}
+var age = 28
+
+var name = "Daniel"
+
+let variable
+
+
 
 
